@@ -1,12 +1,7 @@
 import React from "react";
-import SiderBar from "../components/Siderbar";
 
 const Home = () => {
-  return (
-    <div>
-      <SiderBar />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Home;
