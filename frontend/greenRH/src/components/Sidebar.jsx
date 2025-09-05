@@ -5,23 +5,33 @@ const Sidebar = () => {
   return (
     <div className="flex">
       {/* Sidebar Fixa */}
-      <aside className="w-70 text-white h-screen border-r border-gray-300 fixed inset-y-0 left-0 bg-zinc-50 ">
+      <aside className="w-[280px] fixed left-0 top-0 h-screen bg-green-50 border-r border-gray-300 flex flex-col justify-between">
         {/* Logo */}
-        <div className="mb-8 border-b  border-gray-300 py-5.5 ">
-          <h1 className="ml-10 text-2xl font-semibold text-green-500 font-mono">
-            GreenRH
-          </h1>
+        <div>
+          <div className=" border-b border-gray-300 py-[14px] m-0.5 pl-5 w-full  flex items-center gap-4">
+            <img
+              src="./src/assets/leaf-clipart-green-leave-water-splash-design-vector-illustration-cartoon_557857_wh860-removebg-preview.png"
+              alt="Logo GreenRH"
+              className="h-10 w-10"
+            />
+            <div>
+              <h1 className=" text-2xl font-bold text-green-500  ">GreenRH</h1>
+              <p className="font-sans font-semibold text-black ">
+                Seu melhor amigo
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Menu de Navegação */}
-        <nav className="px-5 py-10 flex flex-col justify-between h-210">
-          <ul className="space-y-3">
-            <li>
+        <nav className="px-5 py-10 flex flex-col justify-between h-210 ">
+          <ul className="space-y-3 flex gap-1 flex-col">
+            <li className="">
               <a
                 href="#dashboard"
-                className="flex items-center p-3 rounded-lg hover:bg-amber-200 transition-colors duration-200"
+                className="flex items-center p-1  rounded-lg hover:bg-amber-200 transition-colors duration-200"
               >
-                <span className="flex items-center justify-center h-12 w-12 rounded-lg bg-amber-200">
+                <span className="flex items-center justify-center h-8 w-8 rounded-lg bg-amber-200">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -44,9 +54,9 @@ const Sidebar = () => {
             <li>
               <a
                 href="#produtos"
-                className="flex items-center p-3 rounded-lg hover:bg-green-200 transition-colors duration-200"
+                className="flex items-center p-1 rounded-lg hover:bg-green-200 transition-colors duration-200"
               >
-                <span className="flex items-center justify-center h-12 w-12 rounded-lg bg-green-200">
+                <span className="flex items-center justify-center h-8 w-8 rounded-lg bg-green-200">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -62,15 +72,17 @@ const Sidebar = () => {
                     />
                   </svg>
                 </span>
-                <span className="ml-3 font-medium text-black">Candidatos</span>
+                <span className="ml-3 font-medium text-neutral-800">
+                  Candidatos
+                </span>
               </a>
             </li>
             <li>
               <a
                 href="#clientes"
-                className="flex items-center p-3 rounded-lg hover:bg-rose-200 transition-colors duration-200"
+                className="flex items-center p-1 rounded-lg hover:bg-rose-200 transition-colors duration-200"
               >
-                <span className="flex items-center justify-center h-12 w-12 rounded-lg bg-rose-200">
+                <span className="flex items-center justify-center h-8 w-8 rounded-lg bg-rose-200">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -86,7 +98,7 @@ const Sidebar = () => {
                     />
                   </svg>
                 </span>
-                <span className="ml-3 font-medium text-black">
+                <span className="ml-3 font-medium text-neutral-800">
                   Vagas em aberto
                 </span>
               </a>
@@ -94,9 +106,9 @@ const Sidebar = () => {
             <li>
               <a
                 href="#relatorios"
-                className="flex items-center p-3 rounded-lg hover:bg-blue-200 transition-colors duration-200"
+                className="flex items-center p-1 rounded-lg hover:bg-blue-200 transition-colors duration-200"
               >
-                <span className="flex items-center justify-center h-12 w-12 rounded-lg bg-blue-200">
+                <span className="flex items-center justify-center h-8 w-8 rounded-lg bg-blue-200">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -112,7 +124,7 @@ const Sidebar = () => {
                     />
                   </svg>
                 </span>
-                <span className="ml-3 font-medium text-black">
+                <span className="ml-3 font-medium text-neutral-800">
                   Carregar curriculo
                 </span>
               </a>
@@ -144,7 +156,9 @@ const Sidebar = () => {
                   />
                 </svg>
               </span>
-              <span className="ml-3 font-medium text-black">Configurações</span>
+              <span className="ml-3 font-medium text-neutral-800">
+                Configurações
+              </span>
             </a>
           </div>
         </nav>
