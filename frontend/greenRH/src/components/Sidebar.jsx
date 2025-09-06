@@ -5,10 +5,10 @@ const Sidebar = () => {
   return (
     <div className="flex">
       {/* Sidebar Fixa */}
-      <aside className="w-[280px] fixed left-0 top-0 h-screen bg-green-50 border-r border-gray-300 flex flex-col justify-between">
+      <aside className="hidden w-[280px] fixed left-0 top-0 h-screen bg-greenrh-50 shadow-gray-700 shadow-lg sm:flex flex-col justify-between">
         {/* Logo */}
         <div>
-          <div className=" border-b border-gray-300 py-[14px] m-0.5 pl-5 w-full  flex items-center gap-4">
+          <div className="  py-[14px] m-0.5 pl-5 w-full  flex items-center gap-4">
             <img
               src="./src/assets/leaf-clipart-green-leave-water-splash-design-vector-illustration-cartoon_557857_wh860-removebg-preview.png"
               alt="Logo GreenRH"
@@ -28,7 +28,7 @@ const Sidebar = () => {
           <ul className="space-y-3 flex gap-1 flex-col">
             <li className="">
               <a
-                href="#dashboard"
+                href="/dashboard"
                 className="flex items-center p-1  rounded-lg hover:bg-amber-200 transition-colors duration-200"
               >
                 <span className="flex items-center justify-center h-8 w-8 rounded-lg bg-amber-200">
@@ -48,12 +48,12 @@ const Sidebar = () => {
                   </svg>
                 </span>
 
-                <span className="ml-3 font-medium text-black">Home</span>
+                <span className="ml-3 font-medium text-black">Dashboarb</span>
               </a>
             </li>
             <li>
               <a
-                href="#produtos"
+                href="/candidatos"
                 className="flex items-center p-1 rounded-lg hover:bg-green-200 transition-colors duration-200"
               >
                 <span className="flex items-center justify-center h-8 w-8 rounded-lg bg-green-200">
@@ -79,7 +79,7 @@ const Sidebar = () => {
             </li>
             <li>
               <a
-                href="#clientes"
+                href="/vagas"
                 className="flex items-center p-1 rounded-lg hover:bg-rose-200 transition-colors duration-200"
               >
                 <span className="flex items-center justify-center h-8 w-8 rounded-lg bg-rose-200">
@@ -105,7 +105,7 @@ const Sidebar = () => {
             </li>
             <li>
               <a
-                href="#relatorios"
+                href="/upload"
                 className="flex items-center p-1 rounded-lg hover:bg-blue-200 transition-colors duration-200"
               >
                 <span className="flex items-center justify-center h-8 w-8 rounded-lg bg-blue-200">

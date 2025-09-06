@@ -2,13 +2,13 @@ import React from "react";
 
 const Header = () => {
   return (
-    <section className=" border-b border-gray-300 py-5 px-5  sm:px-3 md:px-20 text-2xl font-bold text-green-500 flex justify-between bg-green-50  ">
+    <section className=" border-b border-gray-200 py-5 px-5  sm:px-3 md:px-20 text-2xl font-bold text-green-500 flex justify-between bg-greenrh-50  ">
       <div>
-        <div className="bg-green-400 sm:flex items-center gap-2 text-black border-1 border-black px-6 py-1 m-0.5  rounded-full shadow-md ">
+        <div className="bg-green-500 sm:flex items-center gap-2 text-black border-1 border-black px-6 py-1 m-0.5  rounded-full shadow-md ">
           <p className="text-lg font-mono">Candidatos</p>
         </div>
       </div>
-      <div className=" hidden bg-green-400 sm:flex items-center gap-2 text-black border-1 border-black px-6 py-1 m-0.5  rounded-full shadow-md ">
+      <div className=" hidden bg-green-500 sm:flex items-center gap-2 text-black border-1 border-black px-6 py-1 m-0.5  rounded-full shadow-md ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
